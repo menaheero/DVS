@@ -11,6 +11,6 @@ admin.site.index_title = "Welcome to Video Viral!"
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('main.urls')),
-    path('api/', include('hero.urls')),
+    
     # path('', include('pwa.urls')),
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
